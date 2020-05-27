@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Battleship</title>
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="battleship.css">
+</head>
+<body>
+    <div id="board" class="board">
+        
+            <div id="messageArea" class="messageArea"></div>
+            <div class="missileScore">
+                <svg height="480pt" viewBox="-135 0 479 480" width="480pt" xmlns="http://www.w3.org/2000/svg"><path d="m204.738281 265.214844-60.238281-37.648438v-187.566406c0-22.089844-17.910156-40-40-40s-40 17.910156-40 40v187.566406l-60.238281 37.648438c-2.339844 1.464844-3.761719 4.027344-3.761719 6.785156v24c0 4.417969 3.582031 8 8 8h64v100.6875l-45.65625 45.65625c-1.5 1.5-2.34375 3.535156-2.34375 5.65625v16c0 4.417969 3.582031 8 8 8h144c4.417969 0 8-3.582031 8-8v-16c0-2.121094-.84375-4.15625-2.34375-5.65625l-45.65625-45.65625v-100.6875h64c4.417969 0 8-3.582031 8-8v-24c0-2.757812-1.421875-5.320312-3.761719-6.785156zm-124.238281-57.214844h48v16h-48zm0-16v-96h48v96zm0-128h48v16h-48zm24-48c13.253906 0 24 10.746094 24 24v8h-48v-8c0-13.253906 10.746094-24 24-24zm16 384h-32v-8h32zm-80 59.3125 32-32v36.6875h-32zm72 4.6875v-32h-16v32h-8v-48h32v48zm56 0h-32v-36.6875l32 32zm24-176h-64c-4.417969 0-8 3.582031-8 8v80h-32v-80c0-4.417969-3.582031-8-8-8h-64v-11.566406l58.296875-36.433594h59.40625l58.296875 36.433594zm0 0"/></svg>
+                <span id="missileScore"></span>
+            </div>
+            <table class="radar">
+                <div class="sweep"></div>
+                <tr>
+                    <td class="coordinate">a</td>
+                    <td id="00"></td>
+                    <td id="01"></td>
+                    <td id="02"></td>
+                    <td id="03"></td>
+                    <td id="04"></td>
+                    <td id="05"></td>
+                    <td id="06"></td>
+                </tr>
+                <tr>
+                    <td class="coordinate">b</td>
+                    <td id="10"></td>
+                    <td id="11"></td>
+                    <td id="12"></td>
+                    <td id="13"></td>
+                    <td id="14"></td>
+                    <td id="15"></td>
+                    <td id="16"></td>
+                </tr>
+                <tr>
+                    <td class="coordinate">c</td>
+                    <td id="20"></td>
+                    <td id="21"></td>
+                    <td id="22"></td>
+                    <td id="23"></td>
+                    <td id="24"></td>
+                    <td id="25"></td>
+                    <td id="26"></td>
+                </tr>
+                <tr>
+                    <td class="coordinate">d</td>
+                    <td id="30"></td>
+                    <td id="31"></td>
+                    <td id="32"></td>
+                    <td id="33"></td>
+                    <td id="34"></td>
+                    <td id="35"></td>
+                    <td id="36"></td>
+                </tr>
+                <tr>
+                    <td class="coordinate">e</td>
+                    <td id="40"></td>
+                    <td id="41"></td>
+                    <td id="42"></td>
+                    <td id="43"></td>
+                    <td id="44"></td>
+                    <td id="45"></td>
+                    <td id="46"></td>
+                </tr>
+                <tr>
+                    <td class="coordinate">f</td>
+                    <td id="50"></td>
+                    <td id="51"></td>
+                    <td id="52"></td>
+                    <td id="53"></td>
+                    <td id="54"></td>
+                    <td id="55"></td>
+                    <td id="56"></td>
+                </tr>
+                <tr>
+                    <td class="coordinate">g</td>
+                    <td id="60"></td>
+                    <td id="61"></td>
+                    <td id="62"></td>
+                    <td id="63"></td>
+                    <td id="64"></td>
+                    <td id="65"></td>
+                    <td id="66"></td>
+                </tr>
+                <tr>
+                    <td class="coordinate"></td>
+                    <td class="coordinate">0</td>
+                    <td class="coordinate">1</td>
+                    <td class="coordinate">2</td>
+                    <td class="coordinate">3</td>
+                    <td class="coordinate">4</td>
+                    <td class="coordinate">5</td>
+                    <td class="coordinate">6</td>
+                </tr>
+            </table>
+        </div>
+    <script src="battleship.js"></script>
+</body>
+</html>
