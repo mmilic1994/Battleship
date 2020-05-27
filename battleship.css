@@ -127,6 +127,9 @@ td.coordinate {
     td {
         height: 26px
     }
+    td:hover {
+        background: none;
+    }
     .sweep {
         bottom: 36%;
         right: 46%;
