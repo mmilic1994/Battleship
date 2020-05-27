@@ -91,27 +91,6 @@ td {
     width: 50px;
 }
 
-@media screen and (max-width: 425px) {
-    table {
-        margin: 140px 40px 0 40px;
-    }
-    td {
-        height: 26px
-    }
-    .sweep {
-        bottom: 36%;
-        right: 46%;
-        height: 140px;
-        width: 140px;
-    }
-    .missileScore {
-        bottom: -50px;
-        left: 50px;
-        top: auto;
-        right: auto;
-    }
-}
-
 td:hover {
     background: #3AF30D;
 }
@@ -139,4 +118,35 @@ td.coordinate {
 .miss {
     background: url("miss.png") no-repeat center center;
     background-size: contain;
+}
+
+@media screen and (max-width: 768px) {
+    table {
+        margin: 140px 40px 0 40px;
+    }
+    td {
+        height: 26px
+    }
+    .sweep {
+        bottom: 36%;
+        right: 46%;
+        height: 180px;
+        width: 180px;
+    }
+    .missileScore {
+        bottom: -50px;
+        left: 50px;
+        top: auto;
+        right: auto;
+    }
+    table::before {
+        display: none;
+    }
+}
+
+@media screen and (min-width: 425px) and (max-width: 768px) {
+    .sweep {
+        height: 200px;
+        width: 200px;
+    }
 }
