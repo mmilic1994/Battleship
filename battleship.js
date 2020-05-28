@@ -99,9 +99,9 @@ const model = {
         for (var i = 0; i < this.numShips; i++) {
             var ship = model.ships[i];
             for (var j = 0; j < locations.length; j++) {
-            if (ship.locations.indexOf(locations[j]) >= 0) {
-                    return true;
-            } 
+                if (ship.locations.indexOf(locations[j]) >= 0) {
+                        return true;
+                } 
             }
         }
             return false;
@@ -111,7 +111,8 @@ const model = {
         for (var i = 0; i < this.numShips; i++) {
         do {
             locations = this.generateShip(); 
-        }  while (this.collision(locations)); this.ships[i].locations = locations;
+        }  while (this.collision(locations)); 
+            this.ships[i].locations = locations;
         } 
     },
 }
