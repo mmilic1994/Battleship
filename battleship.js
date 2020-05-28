@@ -77,18 +77,17 @@ const model = {
     },
     generateShip: function() {
             let firstShip = [];
-            let boardSize = 7;
             let randomHorizontalOrVartical = ["horizontal", "vertical"][Math.floor(Math.random() * 2)];
             if(randomHorizontalOrVartical === "horizontal") {
-                let randomRowLocation = Math.floor(Math.random() * (boardSize));
-                let randomColumnLocation= Math.floor(Math.random() * (boardSize -2));
+                let randomRowLocation = Math.floor(Math.random() * (model.boardSize));
+                let randomColumnLocation= Math.floor(Math.random() * (model.boardSizeboardSize -2));
                 let randomFirstLocation = String(randomRowLocation) + String(randomColumnLocation);
                 let randomSecondLocation =  String(randomRowLocation) + String(randomColumnLocation + 1);
                 let randomThirdLocation =  String(randomRowLocation) + String(randomColumnLocation + 2);
                 firstShip.push(randomFirstLocation, randomSecondLocation, randomThirdLocation);
             } else if(randomHorizontalOrVartical === "vertical") {
-                let randomRowLocation = Math.floor(Math.random() * (boardSize -2));
-                let randomColumnLocation= Math.floor(Math.random() * (boardSize));
+                let randomRowLocation = Math.floor(Math.random() * (model.boardSize -2));
+                let randomColumnLocation= Math.floor(Math.random() * (model.boardSize));
                 let randomFirstLocation = String(randomRowLocation) + String(randomColumnLocation);
                 let randomSecondLocation =  String(randomRowLocation + 1) + String(randomColumnLocation);
                 let randomThirdLocation =  String(randomRowLocation + 2) + String(randomColumnLocation);
